@@ -1,9 +1,7 @@
-#!/bin/bash
-#include<stdio.h>
+#include <studio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - a function that prints output to the user
+ * Return: 0 always a success
  */
 int main(void)
 {
