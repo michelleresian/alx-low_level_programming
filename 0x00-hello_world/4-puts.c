@@ -1,4 +1,4 @@
-#include <studio.h>
+#include <stdio.h>
 /**
  * main - a function that prints output to the user
  * Return: 0 always a success
