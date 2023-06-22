@@ -2,7 +2,7 @@
 
 /**
  * _isupper - checks for the uppercase character
- * @C: char to check
+ * @c: int type uppercase
  *
  * Return: 0 or 1
  */
@@ -10,6 +10,7 @@
 
 int _isupper(int c)
 {
+
 	if (c >= 'A' && c <= 'Z')
 		return (1);
 	else
