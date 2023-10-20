@@ -1,34 +1,31 @@
 #include "main.h"
+#include <string.h>
 
 /**
- *_strspn - Calculate the length of the initial substring of the string
- *           pointed to by @s made up of only character contained in the
- *            string pointed at by @accept.
- *@s: String to be scanned.
- *@accept: String containing the characters to match.
- *
- *Return: Number of characters in @s consisting only of characters from @accept
+ * _strspn - a function that gets length of prefix substring
+ * @s: paramete string for the function _strspn
+ * @accept: value that is in the string s
+ * Return: char s
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j, bytes = 0, count;
+unsigned int n = 0;
+int r;
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		count = 0;
-
-		for (j = 0; accept[j] != '\n'; j++)
-		{
-			if (accept[j] == s[i])
-			{
-			bytes++;
-			count = 1;
-			}
-		}
-		if (count == 0)
-		{
-			return (bytes);
-		}
-	}
-	return (bytes);
+while (*s)
+{
+for (r = 0; accept[r]; r++)
+{
+if (*s == accept[r])
+{
+n++;
+break;
+}
+else if (accept[r + 1] == '\0')
+return (n);
+}
+s++;
+}
+return (n);
 }
