@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
-* _memset - Fills  memory with a constant byte
-* @s: string pointer to be filled with the constant char
-* @b: constant to fill the memory
-* @n: Number of bytes to be field
-*
-* Return: Pointer to the memory area @s
-*/
+ * _memset - function that fills a particular value to an array
+ * @s: parameter for the array to set the particular memory
+ * @b: value to set to the area we want b to be
+ * @n: size in bytes of area we want b to be
+ * Return: char
+ */
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
